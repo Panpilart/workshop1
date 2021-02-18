@@ -1,0 +1,17 @@
+<div class="row">
+    <div class="col-md-3">
+        <div style="width: 200px; height: auto;"><img [src]="imgUrl" alt="" style="width: 100%;"></div>
+    </div>
+    <div class="col-md-9">
+        <p><strong>ID:</strong> {{studentID}}</p>
+        <p><strong>Name:</strong> {{studentName}} </p>
+        <div>
+            <p>{{skills.title | uppercase}}</p>
+            <p>{{skills.student}}</p>
+            <p>{{skills.rating | number}}</p>
+            <p>{{skills.price | currency:"BTH"}}</p>
+            <p>{{skills.releasDate | date:'shortDate'}}</p>
+        </div>
+    </div>
+</div>
+
